@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "autoscaling:PutLifecycleHook",
+        "autoscaling:DeleteLifecycleHook",
+        "autoscaling:RecordLifecycleActionHeartbeat",
+        "autoscaling:CompleteLifecycleAction",
+        "autoscaling:DescribeAutoscalingGroups",
+        "autoscaling:PutInstanceInStandby",
+        "autoscaling:PutInstanceInService",
+        "ec2:Describe*",
+        "s3:Get*",
+        "s3:List*",
+        "Tag:get*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
